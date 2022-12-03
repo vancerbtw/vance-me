@@ -21,6 +21,9 @@ export default {
         "secondary": "#FE0558"
       }
     },
+    screens: {
+      'lg': '900px'
+    }
   },
   purge: ["./index.html",'./src/**/*.{svelte,js,ts}'], // for unused CSS
   variants: {

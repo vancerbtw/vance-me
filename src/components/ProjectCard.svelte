@@ -19,6 +19,7 @@
   class="
     project-card
     bg-white
+    drop-shadow-md
     dark:bg-[#414146]
     justify-self-center
     flex
@@ -26,18 +27,16 @@
     rounded-xl
     overflow-hidden
   "
-  style="--aspect-ratio: 4/3;"
 >
   <img src={bannerUrl} alt={`${name} Banner`} class="
     w-full
-    flex-1
     object-cover
   " />
 
-  <div class="h-28 flex items-center px-4">
+  <div class="py-2 flex items-center px-4">
     <img src={iconUrl} alt={`${name} Icon`} class="
-      w-14
-      h-14
+      w-10 h-10
+      lg:w-14 lg:h-14
       rounded-full
     " />
 

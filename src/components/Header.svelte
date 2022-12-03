@@ -3,7 +3,7 @@
   import DeveloperText from "./DeveloperText.svelte";
 </script>
 
-<div id="container" class="flex flex-row flex-1 sm:px-5 xl:w-2/3">
+<div id="container" class="flex flex-row flex-1 sm:px-5 w-10/12 xl:w-2/3">
   <div class="flex flex-1 justify-center flex-col px-5">
     <div class="flex flex-row items-end">
       <span class="font-medium">Hey</span>
@@ -39,8 +39,8 @@
   }
 
   #container h1 {
-    font-size: 4.25rem; 
-    line-height: 4.25rem;
+    font-size: 4rem; 
+    line-height: 4rem;
   }
 
   #container p {

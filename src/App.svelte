@@ -20,22 +20,33 @@
     }
   });
 
-  y.subscribe((value) => {
-    console.log("uh")
+  const setYTimeout = () => {
     const results = window.document.getElementsByClassName("projects-container");
     if (results.length <= 0) return;
 
     const container = results[0];
 
-    if (value > 0) {
+    if ($y > 0) {
       container.classList.add("hide");
       container.classList.remove("show");
     } else {
       setTimeout(() => {
-        container.classList.add("show");
-        container.classList.remove("hide");
+      console.log($y);
+        if ($y <= 0) {
+          const results = window.document.getElementsByClassName("projects-container");
+          if (results.length <= 0) return;
+
+          const container = results[0];
+
+          container.classList.add("show");
+          container.classList.remove("hide");
+        }
       }, 2000);
     }
+  }
+
+  y.subscribe((value) => {
+    setYTimeout();
   });
 
   setTimeout(() => {
@@ -48,7 +59,7 @@
       container.classList.add("show");
       container.classList.remove("hide");
     }
-  }, 4000);
+  }, 2000);
 
   const goToProjects = () => {
     const element = document.getElementById("projects-container");
@@ -69,7 +80,7 @@
       <!-- this will contain the down arrow to tell you to look at my projects and will help with layout -->
       <div class="w-full h-36 scroll-alert flex flex-col items-center justify-end">
         <button on:click={goToProjects} id="projects-container" class="projects-container flex flex-row text-lg font-bold items-center mb-4 cursor-pointer">
-          Projects!
+          Projects
         
           <div class="h-5 w-12 text-indigo-500 w-1/6 m-1 show">
             <FaChevronDown />
