@@ -1,34 +1,43 @@
-<span class="holder">
-  <span class="item text-primary">Frontend</span>
-  <span class="item text-primary">Backend</span>
-  <span class="item text-primary">Mobile</span>
-</span>
+<div class="holder mt-2">
+  <div class="item flex flex-row items-end gap-2">
+    <span class="text-primary text-[2em] leading-[1em]">Frontend</span>
+    <span class="text-[2em] leading-[1em]">Developer</span>
+  </div>
+
+  <div class="item flex flex-row items-end gap-2">
+    <span class="text-primary text-[2em] leading-[1em]">Backend</span>
+    <span class="text-[2em] leading-[1em]">Developer</span>
+  </div>
+
+  <div class="item flex flex-row items-end gap-2">
+    <span class="text-primary text-[2em] leading-[1em]">Mobile</span>
+    <span class="text-[2em] leading-[1em]">Developer</span>
+  </div>
+</div>
 
 <style>
   .holder {
     position: relative;
-    width: 140px;
     height: 3em;
   }
 
-  span.item {
+  div.item {
     position: absolute;
-    font-size: 2em;
     transform-origin: 50% 70%;
-    width: 140px;
+    width: 300;
     opacity: 0;
     animation: changeword 9s linear infinite;
   }
 
-  span.item:nth-child(1) {
+  div.item:nth-child(1) {
     animation-delay: 0s;
   }
 
-  span.item:nth-child(2) {
+  div.item:nth-child(2) {
     animation-delay: 3s;
   }
 
-  span.item:nth-child(3) {
+  div.item:nth-child(3) {
     animation-delay: 6s;
   }
 

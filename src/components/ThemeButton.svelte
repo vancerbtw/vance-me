@@ -6,6 +6,8 @@
 
   const toggleDark = () => {
     $darkTheme = !$darkTheme;
+
+    localStorage.setItem("darkMode", $darkTheme ? "true": "false");
   }
 </script>
 

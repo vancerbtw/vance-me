@@ -3,18 +3,27 @@
   import DeveloperText from "./DeveloperText.svelte";
 </script>
 
-<div id="container" class="flex flex-row flex-1 sm:px-5 xl:px-64">
+<div id="container" class="flex flex-row flex-1 sm:px-5 xl:w-2/3">
   <div class="flex flex-1 justify-center flex-col px-5">
     <div class="flex flex-row items-end">
-      <span class="font-medium">Hey There</span>
+      <span class="font-medium">Hey</span>
+
+      <span class="font-medium text-primary">,</span>
     </div>
-    <h1 class="font-bold z-10">I'm Vance</h1>
+
+    <div class="flex flex-row items-center h-[4.25rem] mt-2">
+      <h1 class="font-bold z-10">I'm Vance</h1>
+
+      <div class="font-medium text-primary text-8xl">!</div>
+    </div>
+
+    <DeveloperText />
     
-    <div class="flex flex-row items-center">
+    <!-- <div class="flex flex-row items-center">
       <DeveloperText />
 
       <p>Developer</p>
-    </div>
+    </div> -->
   </div>
 
   <div class="flex flex-1 justify-center items-center">

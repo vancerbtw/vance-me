@@ -14,9 +14,9 @@
     w-full
     flex-col
   ">
-    <a href="#" class="w-full">Link 1</a>
+    <!-- <a href="#" class="w-full">Link 1</a>
     <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Link 3</a> -->
   </div>
 </div>
 
