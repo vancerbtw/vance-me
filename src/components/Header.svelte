@@ -11,10 +11,10 @@
       <span class="font-medium text-primary">,</span>
     </div>
 
-    <div class="flex flex-row items-center h-[4.25rem] mt-2">
+    <div class="flex flex-row items-end h-[4.25rem] mt-2">
       <h1 class="font-bold z-10">I'm Vance</h1>
 
-      <div class="font-medium text-primary text-8xl">!</div>
+      <div class="font-medium text-primary text-8xl leading-[5rem]">!</div>
     </div>
 
     <DeveloperText />
