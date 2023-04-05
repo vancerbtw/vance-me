@@ -9,7 +9,7 @@
     <h1 class="text-4xl font-semibold">My Projects</h1>
 
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
-      <ProjectCard projectUrl="https://revvy-web-info-vercel.vercel.app/" name="Revvy" iconUrl={RevvyIconUrl} bannerUrl={RevvyBannerUrl} buttonBackgroundProp="linear-gradient(95.99deg, #3E2ACB 7.76%, #5A1DB6 71.74%)" />
+      <ProjectCard projectUrl="https://revvy.dev/" name="Revvy" iconUrl={RevvyIconUrl} bannerUrl={RevvyBannerUrl} buttonBackgroundProp="linear-gradient(95.99deg, #3E2ACB 7.76%, #5A1DB6 71.74%)" />
     </div>
   </div>
 </div>
